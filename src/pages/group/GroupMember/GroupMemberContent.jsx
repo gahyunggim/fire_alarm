@@ -53,11 +53,13 @@ const memberColumns = [
     title: "이름",
     dataIndex: "name",
     key: "name",
+    editable: true,
   },
   {
     title: "연락처",
     dataIndex: "contact",
     key: "contact",
+    editable: true,
   },
   {
     title: "삭제",
@@ -69,6 +71,7 @@ const memberColumns = [
         icon={<DeleteFilled style={{ color: "red" }} />}
       ></Button>
     ),
+    editable: true,
   },
 ];
 

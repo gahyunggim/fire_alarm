@@ -4,9 +4,14 @@ import "./App.css";
 import GroupInfo from "./pages/group/GroupInfo/GroupInfo";
 import GroupMember from "./pages/group/GroupMember/GroupMember";
 import { Button, Flex } from "antd";
+import { useEffect } from "react";
 
 function App() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("/group/groupInfo");
+  }, []);
 
   return (
     <>
